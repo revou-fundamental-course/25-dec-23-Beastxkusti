@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Welcome to Katik</title>
-   <link rel="stylesheet" href="style.css">
+  <title>Katik - Kalkulator Segitiga</title>
+  <link rel="stylesheet" href="css/cssnya.css">
 </head>
 <body>
-  <h1> Katik - Kalkulator Segitiga </h1>
-  <p> Hai, Sobat, Selamat datang di Katik :]</p>
-  <p> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+  <div class="container">
+    <h1>Welcome to Katik </h1>
+    <p> Hai Sobat, Selamat datang di Katik :]</p>
+    <p> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    <div class="triangle-image">
+      <img src="https://pulpent.com/wp-content/uploads/2021/08/Rumus-Segitiga.jpg.webp" alt="Triangle">
+    </div>
+    <form id="triangleForm"> <!-- Added the form tag with ID -->
+      <div class="container">
+        <table>
+          <tr>
+            <td>
+              <h2>Alas dan Tinggi</h2>
+              <div class="form-group">
+                <label for="alas">Alas</label>
+                <input type="number" name="alas" id="alas">
+              </div>
+              <div class="form-group">
+                <label for="tinggi">Tinggi</label>
+                <input type="number" name="tinggi" id="tinggi">
+              </div>
+            </td>
+            <td>
+              <h2>Sisi-sisi</h2>
+              <div class="form-group">
+                <label for="sisi1">Sisi 1</label>
+                <input type="number" name="sisi1" id="Sisi1">
+              </div>
+              <div class="form-group">
+                <label for="sisi2">Sisi 2</label>
+                <input type="number" name="sisi2" id="Sisi2">
+              </div>
+              <div class="form-group">
+                <label for="sisi3">Sisi 3</label>
+                <input type="number" name="sisi3" id="Sisi3">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <button type="submit" class="btn btn-primary">Hitung</button>
+      <button type="reset" id="reset" class="btn btn-secondary">Reset</button>
+    </form> <!-- Closed the form tag -->
+    <div class="hasil">
+      <h2>Hasil</h2>
+      <p>Luas: <span id="luas"></span></p>
+      <p>Keliling: <span id="keliling"></span></p>
+    </div>
+  </div>
+  <script src="js/javanya.js"></script>
 </body>
 </html>
