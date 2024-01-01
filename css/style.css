@@ -1,4 +1,4 @@
-body {
+    body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -41,17 +41,17 @@ body {
     border: 1px solid #ccc;
   }
     
-.triangle-image {
-  text-align: center; 
-  margin-top: 0px; 
-}
-
-.triangle-image img {
-  width: 500px; 
-  height: auto; 
-  display: block; 
-}
-
+  .triangle-image {
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  .triangle-image img {
+    width: 500px;
+    height: auto;
+    display: block;
+  }
+  
   button {
     width: 100px;
     margin-top: 20px;
