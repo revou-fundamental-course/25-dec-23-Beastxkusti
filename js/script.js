@@ -1,5 +1,5 @@
 function hitung(event) {
-    event.preventDefault(); // Prevents the form from submitting and page reload
+    event.preventDefault(); 
   
     var alas = parseFloat(document.getElementById("alas").value);
     var tinggi = parseFloat(document.getElementById("tinggi").value);
@@ -17,7 +17,7 @@ function hitung(event) {
   document.getElementById("triangleForm").addEventListener("submit", hitung);
   
   function resetForm(event) {
-    event.preventDefault(); // Prevents the default reset behavior
+    event.preventDefault(); 
   
     document.getElementById("alas").value = "";
     document.getElementById("tinggi").value = "";
