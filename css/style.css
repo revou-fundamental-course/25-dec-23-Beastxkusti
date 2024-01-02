@@ -18,6 +18,27 @@ header {
 
 #mencariluas,
 #mencarikeliling {
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+#mencariluas {
+  background-color: hsl(27, 100%, 50%); 
+  color: #fff; 
+  border: none;
+}
+
+#mencarikeliling {
+  background-color: hsl(27, 100%, 50%); 
+  color: #fff; 
+  border: none;
+}
+
+#mencariluas,
+#mencarikeliling {
   width: 150px;
   margin: 0 10px;
 }
@@ -81,6 +102,18 @@ input {
 button {
   width: 100px;
   margin: 10px;
+}
+
+#submit {
+  background-color: hsl(216, 100%, 50%); 
+  color: #fff; 
+  border: none;
+}
+
+#reset {
+  background-color: hsl(0, 100%, 50%); 
+  color: #fff; 
+  border: none;
 }
 
 .hasil {
