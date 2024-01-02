@@ -102,18 +102,25 @@ input {
 button {
   width: 100px;
   margin: 10px;
+  cursor: pointer;
 }
 
 #submit {
   background-color: hsl(216, 100%, 50%); 
   color: #fff; 
   border: none;
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  font-size: 16px;
 }
 
 #reset {
   background-color: hsl(0, 100%, 50%); 
   color: #fff; 
   border: none;
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  font-size: 16px;
 }
 
 .hasil {
