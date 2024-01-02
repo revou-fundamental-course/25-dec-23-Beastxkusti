@@ -46,9 +46,6 @@ form {
   margin-bottom: 10px;
 }
 
-.kelilinginput {
-  text-align: center;
-}
 
 label {
   font-weight: bold;
@@ -66,6 +63,14 @@ input {
   display: block;
   margin: 20px auto;
   max-height: 300px;
+}
+
+#luasInputs table,
+#kelilingInputs table {
+  width: 100%;
+  max-width: 400px; /* Menyesuaikan lebar maksimum form */
+  margin: 0 auto; /* Untuk menengahkan secara horizontal */
+  text-align: center;
 }
 
 .center {
