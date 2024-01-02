@@ -68,8 +68,8 @@ input {
 #luasInputs table,
 #kelilingInputs table {
   width: 100%;
-  max-width: 400px; /* Menyesuaikan lebar maksimum form */
-  margin: 0 auto; /* Untuk menengahkan secara horizontal */
+  max-width: 400px; 
+  margin: 0 auto; 
   text-align: center;
 }
 
