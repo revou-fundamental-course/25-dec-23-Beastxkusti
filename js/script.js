@@ -1,32 +1,40 @@
-function hitung(event) {
-  event.preventDefault(); // Prevents the form from submitting and page reload
+function hitungLuas(event) {
+  event.preventDefault(); 
 
   var alas = parseFloat(document.getElementById("alas").value);
   var tinggi = parseFloat(document.getElementById("tinggi").value);
+
+  var luas = (alas * tinggi) / 2;
+
+  document.getElementById("luas").textContent = "Luas: " + luas.toFixed(2);
+  document.getElementById("keliling").textContent = "";
+}
+
+function hitungKeliling(event) {
+  event.preventDefault(); 
+
   var sisi1 = parseFloat(document.getElementById("Sisi1").value);
   var sisi2 = parseFloat(document.getElementById("Sisi2").value);
   var sisi3 = parseFloat(document.getElementById("Sisi3").value);
 
-  var luas = (alas * tinggi) / 2;
   var keliling = sisi1 + sisi2 + sisi3;
 
-  document.getElementById("luas").textContent = luas;
-  document.getElementById("keliling").textContent = keliling;
+  document.getElementById("keliling").textContent = "Keliling: " + keliling.toFixed(2);
+  document.getElementById("luas").textContent = ""; 
 }
 
-document.getElementById("triangleForm").addEventListener("submit", hitung);
+document.getElementById("mencariluas").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("luasInputs").style.display = "block";
+  document.getElementById("kelilingInputs").style.display = "none";
+  document.getElementById("triangleForm").addEventListener("submit", hitungLuas);
+  document.getElementById("triangleForm").removeEventListener("submit", hitungKeliling);
+});
 
-function resetForm(event) {
-  event.preventDefault(); // Prevents the default reset behavior
-
-  document.getElementById("alas").value = "";
-  document.getElementById("tinggi").value = "";
-  document.getElementById("Sisi1").value = "";
-  document.getElementById("Sisi2").value = "";
-  document.getElementById("Sisi3").value = "";
-
-  document.getElementById("luas").textContent = "";
-  document.getElementById("keliling").textContent = "";
-}
-
-document.getElementById("reset").addEventListener("click", resetForm);
+document.getElementById("mencarikeliling").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("kelilingInputs").style.display = "block";
+  document.getElementById("luasInputs").style.display = "none";
+  document.getElementById("triangleForm").addEventListener("submit", hitungKeliling);
+  document.getElementById("triangleForm").removeEventListener("submit", hitungLuas);
+});

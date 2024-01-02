@@ -3,19 +3,24 @@
 <head>
   <title>Katik - Kalkulator Segitiga</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Welcome to Katik </h1>
+    <h1>Welcome to Katik</h1>
+    <div class="buttons">
+      <button type="submit" id="mencariluas" class="btn btn-primary">Luas segitiga</button>
+      <button type="submit" id="mencarikeliling" class="btn btn-secondary">Keliling segitiga</button>
+    </div>
   </header>
   <div class="container">
-    <p> Hai Sobat, Selamat datang di Katik :]</p>
-    <p> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    <p>Hai Sobat, Selamat datang di Katik :]</p>
+    <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
     <div class="triangle-image">
       <img src="https://pulpent.com/wp-content/uploads/2021/08/Rumus-Segitiga.jpg.webp" alt="Triangle">
     </div>
     <form id="triangleForm"> 
-      <div class="container">
+      <div class="container" id="luasInputs" style="display: none;">
         <table>
           <tr>
             <td>
@@ -29,6 +34,12 @@
                 <input type="number" name="tinggi" id="tinggi">
               </div>
             </td>
+          </tr>
+        </table>
+      </div>
+      <div class="container" id="kelilingInputs" style="display: none;">
+        <table>
+          <tr>
             <td>
               <h2>Sisi-sisi</h2>
               <div class="form-group">
@@ -52,10 +63,9 @@
     </form> 
     <div class="hasil">
       <h2>Hasil</h2>
-      <p>Luas: <span id="luas"></span></p>
-      <p>Keliling: <span id="keliling"></span></p>
+      <p id="luas"></p>
+      <p id="keliling"></p>
     </div>
   </div>
-  <script src="js/script.js"></script>
 </body>
 </html>
